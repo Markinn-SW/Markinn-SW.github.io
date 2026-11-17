@@ -1,1 +1,188 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+  background-color: #f4f1ea;
+  color: #1e293b;
+  margin: 0;
+  padding: 40px 20px;
+  line-height: 1.6;
+}
+
+.cv-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
+  overflow: hidden;
+}
+
+.cv-main-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+}
+
+/* Encabezado Principal */
+.header-cell {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  color: #f8fafc;
+  padding: 36px 40px;
+  border-bottom: 5px solid #d6c7b2;
+}
+
+app-header table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+app-header td {
+  vertical-align: middle;
+  padding: 8px;
+}
+
+app-header td:first-child {
+  width: 42%;
+}
+
+app-header td:first-child p:first-child {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 6px 0;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+}
+
+app-header td:first-child p:last-child {
+  font-size: 1rem;
+  color: #e2d9c8;
+  font-weight: 400;
+  margin: 0;
+}
+
+app-header td:nth-child(2) {
+  width: 20%;
+  text-align: center;
+}
+
+app-header img {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #d6c7b2;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+}
+
+app-header td:last-child {
+  width: 38%;
+  text-align: right;
+}
+
+app-header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.92rem;
+  color: #e2e8f0;
+}
+
+app-header li {
+  margin-bottom: 6px;
+}
+
+/* Columnas del Cuerpo */
+.col-left, .col-right {
+  width: 50%;
+  vertical-align: top;
+  padding: 28px 36px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.col-left {
+  border-right: 1px solid #e2e8f0;
+}
+
+/* Títulos de sección en su propia línea */
+.section-title {
+  display: block;
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #1e293b;
+  margin: 0 0 18px 0;
+  padding-bottom: 8px;
+  border-bottom: 3px solid #d6c7b2;
+}
+
+/* Forzar a todos los componentes a ocupar su propio bloque debajo del título */
+app-work-experience,
+app-education,
+app-certificates,
+app-skills,
+app-languages,
+app-interests {
+  display: block;
+  width: 100%;
+}
+
+/* Listas de Experiencia, Educación y Certificados */
+app-work-experience ul,
+app-education ul,
+app-certificates ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px 0;
+}
+
+app-work-experience li,
+app-education li,
+app-certificates li {
+  position: relative;
+  padding-left: 16px;
+  border-left: 3px solid #d6c7b2;
+  margin-bottom: 16px;
+  font-size: 0.95rem;
+}
+
+app-work-experience b,
+app-education b,
+app-certificates b {
+  color: #0f172a;
+  font-size: 1.05rem;
+}
+
+app-work-experience i {
+  color: #64748b;
+  font-size: 0.88rem;
+}
+
+/* Listas verticales debajo del título para Skills, Languages e Interests */
+app-skills ul,
+app-languages ul,
+app-interests ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 8px 0;
+  display: block;
+}
+
+app-skills li,
+app-languages li,
+app-interests li {
+  display: block;
+  background-color: #f5efe6;
+  color: #2c2520;
+  border: 1px solid #d6c7b2;
+  border-left: 4px solid #b8a386;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
